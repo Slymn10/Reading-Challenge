@@ -28,8 +28,6 @@ class LibraryVC: UITableViewController {
         }
         tableView.reloadData()
     }
-
-
 }
 //MARK: - TableView Functions
 extension LibraryVC{
