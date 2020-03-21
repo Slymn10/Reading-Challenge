@@ -1,2 +1,2 @@
 # Reading Challenge
- ![](ReadingChallenge.gif)
+ ![](RChallenge.gif)
