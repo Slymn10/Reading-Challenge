@@ -157,22 +157,6 @@
             </objects>
             <point key="canvasLocation" x="3769.5652173913045" y="139.95535714285714"/>
         </scene>
-        <!--Challange-->
-        <scene sceneID="LBr-Nm-xBS">
-            <objects>
-                <viewController id="F5i-9O-Wru" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="7c6-wq-v3a">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="nC4-hJ-wSI"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="Challange" id="zks-NM-gS8"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Sx9-aq-uFA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2837.68115942029" y="-593.30357142857144"/>
-        </scene>
         <!--Books-->
         <scene sceneID="QnN-Fb-ipl">
             <objects>
@@ -189,7 +173,6 @@
                     </tabBar>
                     <connections>
                         <segue destination="H05-mO-A7R" kind="relationship" relationship="viewControllers" id="hl0-EL-Maj"/>
-                        <segue destination="bIw-U7-ODU" kind="relationship" relationship="viewControllers" id="i7c-Xy-rlL"/>
                         <segue destination="sI9-p3-gsh" kind="relationship" relationship="viewControllers" id="5O2-54-f6v"/>
                     </connections>
                 </tabBarController>
@@ -221,31 +204,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ksN-Tl-2zH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1927.5362318840582" y="139.95535714285714"/>
-        </scene>
-        <!--Challenge-->
-        <scene sceneID="qRL-oV-Dw5">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="bIw-U7-ODU" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Challenge" image="icons8-battle-32" id="lWh-99-ZTk">
-                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
-                    </tabBarItem>
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="HBI-eB-wop">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.96862745098039216" green="0.69803921568627447" blue="0.17254901960784313" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
-                        <textAttributes key="titleTextAttributes">
-                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                        </textAttributes>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="F5i-9O-Wru" kind="relationship" relationship="rootViewController" id="7Te-Ng-ZFl"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="n3I-hy-wxz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1927.5362318840582" y="-593.30357142857144"/>
         </scene>
         <!--Library-->
         <scene sceneID="QFo-q7-WRc">
@@ -351,7 +309,6 @@
     </scenes>
     <resources>
         <image name="bookmark" catalog="system" width="56" height="64"/>
-        <image name="icons8-battle-32" width="32" height="32"/>
         <image name="magnifyingglass" catalog="system" width="64" height="56"/>
     </resources>
 </document>

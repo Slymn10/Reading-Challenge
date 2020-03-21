@@ -13,7 +13,7 @@ class LibraryVC: UITableViewController {
     var books = [BookLibrary]()
     let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
 
-    override func viewDidLoad() {
+    override func viewDidLoad(){
         super.viewDidLoad()
     }
     override func viewWillAppear(_ animated: Bool) {
@@ -49,6 +49,25 @@ extension LibraryVC{
         tableView.deselectRow(at: indexPath, animated: true)
     }
 
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            self.context.delete(books[indexPath.row])
+            self.saveBooks()
+            books.remove(at: indexPath.row)
+            tableView.deleteRows(at: [indexPath], with: .fade)
+            tableView.reloadData()
+        }
+    }
+
+
+    func saveBooks(){
+        do {
+            try self.context.save()
+        } catch  {
+            print(error)
+        }
+        self.tableView.reloadData()
+    }
 
 
 
